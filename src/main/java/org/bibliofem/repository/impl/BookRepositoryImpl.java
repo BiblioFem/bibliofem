@@ -1,0 +1,4 @@
+package org.bibliofem.repository.impl;
+
+public class BookRepositoryImpl {
+}
