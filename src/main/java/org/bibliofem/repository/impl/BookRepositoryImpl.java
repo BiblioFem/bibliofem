@@ -1,4 +1,8 @@
 package org.bibliofem.repository.impl;
 
-public class BookRepositoryImpl {
+import org.bibliofem.repository.BookRepository;
+
+public class BookRepositoryImpl implements BookRepository {
+
+
 }
