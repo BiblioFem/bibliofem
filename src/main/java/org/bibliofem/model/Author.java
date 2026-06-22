@@ -1,5 +1,9 @@
 package org.bibliofem.model;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class Author {
     private int idAuthor;
     private String author;
@@ -12,19 +16,4 @@ public class Author {
         this.author = author;
     }
 
-    public int getIdAuthor() {
-        return idAuthor;
-    }
-
-    public void setIdAuthor(int idAuthor) {
-        this.idAuthor = idAuthor;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
 }
