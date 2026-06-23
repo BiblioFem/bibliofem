@@ -10,18 +10,21 @@ public class Book {
     private String isbn;
     private String title;
     private String description;
-    private int genreId;
+    private String genre;
 
-    private List<String> authors;
+    private String authors;
 
     public Book() {
 
     }
 
-    public Book(String isbn, String title, String description) {
+    public Book(int id, String isbn, String title, String description, String genre, String authors) {
+        this.idBook = id;
         this.isbn = isbn;
         this.title = title;
         this.description = description;
+        this.genre = genre;
+        this.authors = authors;
 
     }
 }
