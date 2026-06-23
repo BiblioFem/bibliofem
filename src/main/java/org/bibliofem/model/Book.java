@@ -10,7 +10,7 @@ public class Book {
     private String isbn;
     private String title;
     private String description;
-    private String genreId;
+    private String genre;
 
     private String authors;
 
@@ -18,12 +18,12 @@ public class Book {
 
     }
 
-    public Book(int id, String isbn, String title, String description, String genreId, String authors) {
+    public Book(int id, String isbn, String title, String description, String genre, String authors) {
         this.idBook = id;
         this.isbn = isbn;
         this.title = title;
         this.description = description;
-        this.genreId = genreId;
+        this.genre = genre;
         this.authors = authors;
 
     }
