@@ -13,10 +13,14 @@ import org.bibliofem.model.Author;
 import org.bibliofem.repository.BookRepository;
 import org.bibliofem.repository.impl.BookRepositoryImpl;
 import org.bibliofem.service.BookService;
+import org.bibliofem.utils.ConsoleColors;
 import org.bibliofem.view.BookView;
+import org.bibliofem.view.MenuView;
 
 public class Main {
     public static void main(String[] args) {
+        MenuView menuView = new MenuView();
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Inserta el gènero del libro que estás buscando: ");
         String titleSearch = scanner.nextLine();
