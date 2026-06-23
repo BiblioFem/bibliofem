@@ -20,18 +20,7 @@ import org.bibliofem.view.MenuView;
 public class Main {
     public static void main(String[] args) {
         MenuView menuView = new MenuView();
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Inserta el gènero del libro que estás buscando: ");
-        String titleSearch = scanner.nextLine();
-
-
-
-        BookRepository bookRepository = new BookRepositoryImpl();
-        BookService bookService = new BookService(bookRepository);
-        BookController bookController = new BookController(bookService);
-        BookView bookView = new BookView(bookController);
-        bookView.filterByGenre(titleSearch);
+        menuView.startMenu();
 
     }
 
