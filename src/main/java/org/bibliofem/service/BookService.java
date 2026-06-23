@@ -17,5 +17,28 @@ public class BookService {
 
   }
 
+  public List<Book> filterByTitle(String title){
+        return repository.getAllBooks()
+                .stream()
+                .filter(book -> book.getTitle().toLowerCase().contains(title.toLowerCase()))
+                .toList();
+  }
+
+
+  public List<Book> filterByAuthor(String author){
+        return repository.getAllBooks()
+                .stream()
+                .filter(book -> book.getAuthors().toLowerCase().contains(author.toLowerCase()))
+                .toList();
+  }
+
+
+  public List<Book> filterByGenre(String genre){
+        return repository.getAllBooks()
+                .stream()
+                .filter(book -> book.getGenre().toLowerCase().contains(genre.toLowerCase()))
+                .toList();
+  }
+
 }
 

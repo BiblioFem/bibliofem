@@ -13,5 +13,16 @@ public class BookController {
         return service.getAllBooks();
     }
 
+    public List<Book> filterByTitle(String title) {
+        return service.filterByTitle(title);
+    }
+
+    public List<Book> filterByAuthor(String author) {
+        return service.filterByAuthor(author);
+    }
+
+    public List<Book> filterByGenre(String genre) {
+        return service.filterByGenre(genre);
+    }
 }
 
