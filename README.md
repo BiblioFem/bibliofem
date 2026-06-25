@@ -1,13 +1,13 @@
-# 📚 BiblioFem
+# BiblioFem
 
 BiblioFem is a Java console application designed to manage a library catalog. The project follows a layered architecture and applies SOLID principles to provide a clean, maintainable, and scalable codebase.
 
-##  🔥 DEMO
+## DEMO
 
 ![ezgif.com-optimize.gif](assets/ezgif.com-optimize.gif)
 
 
-## 🚀 Features
+## Features
 
 - View all books
 - Search books by different filters
@@ -17,29 +17,36 @@ BiblioFem is a Java console application designed to manage a library catalog. Th
 - Repository, Service and Controller pattern
 - Console menu with improved user experience
 
-## 🛠️ Tech Stack
+## Technologies
 
-- Java 21
-- Maven
-- MySQL
-- JDBC
-- Lombok
-- Git & GitHub
+| Technology | Version |
+|------------|---------|
+| Java | 25 |
+| Maven | 4.0.0 (POM model) |
+| JUnit | 4.12 |
+| dotenv-java | 3.2.0 |
+| PostgreSQL | 17.9.15
+| IntelliJ IDEA | 2026.1.2|
+| GitHub | Cloud |
 
-## 📂 Project Structure
-
+```text
+src/
+└── main/
+    └── java/
+        └── org/
+            └── bibliofem/
+                ├── controller/
+                ├── service/
+                ├── repository/
+                │   └── impl/
+                ├── model/
+                ├── view/
+                ├── database/
+                ├── utils/
+                └── Main.java
 ```
-src
-├── controller
-├── model
-├── repository
-├── service
-├── view
-├── database
-└── Main.java
-```
 
-## 🏛️ Architecture
+## Architecture
 
 The project follows a layered architecture:
 
@@ -63,7 +70,7 @@ Each layer has a single responsibility:
 - **Repository:** Handles database operations.
 - **Model:** Represents application entities.
 
-## ⚙️ Installation
+## Installation
 
 ### 1. Clone the repository
 
@@ -99,7 +106,7 @@ Run the `Main` class.
 
 ---
 
-## 📖 Current Functionality
+## Current Functionality
 
 - Connect to the database
 - List all books
@@ -109,7 +116,7 @@ Run the `Main` class.
 
 ---
 
-## 🚧 Future Improvements
+## Future Improvements
 
 - Create books
 - Update books
@@ -120,7 +127,7 @@ Run the `Main` class.
 
 ---
 
-## 👥 Team
+## Team
 
 Developed by the **BiblioFem** team.
 
@@ -129,17 +136,5 @@ Developed by the **BiblioFem** team.
 - [Chiara](https://github.com/Kressala)
 - [Siuzanna](https://github.com/SiuzannaVach)
 - [Nira](https://github.com/nmantilla12)
-
----
-
-## 🌱 Git Workflow
-
-This project follows a Git Flow inspired workflow.
-
-- `main` → Production
-- `dev` → Development
-- `feature/*` → New features
-
-Pull Requests require at least one approval before merging.
 
 ---
