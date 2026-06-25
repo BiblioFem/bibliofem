@@ -24,5 +24,7 @@ public class BookController {
     public List<Book> filterByGenre(String genre) {
         return service.filterByGenre(genre);
     }
+
+    public void deleteBook(int id) { service.deleteBook(id); }
 }
 

@@ -1,6 +1,8 @@
 package org.bibliofem.view;
 import org.bibliofem.controller.BookController;
 import org.bibliofem.model.Book;
+import org.bibliofem.utils.ConsoleColors;
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -69,6 +71,25 @@ public class BookView {
 
     }
 
+    public void deleteBook(){
+        Scanner scanner = new Scanner(System.in);
+        getAllBooks();
+        System.out.print("Introduce el id del libro que quieras eliminar: ");
+        if(scanner.hasNextInt()){
+            int idSearch = scanner.nextInt();
+            scanner.nextLine();
+            System.out.println("Deseas borrar definitivamente el libro seleccionado? Este cambio será irreversible...\n SI / NO");
+
+            String response = scanner.nextLine();
+            if(response.equalsIgnoreCase("SI")){
+                controller.deleteBook(idSearch);
+                System.out.println(ConsoleColors.PURPLE + "Libro eliminado con éxito" + ConsoleColors.RESET);
+            }
+
+        } else {
+            System.out.println("Debes introducir un número");
+        }
+    }
 }
 
 
