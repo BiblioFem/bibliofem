@@ -1,6 +1,3 @@
-# `README.md`
-
-````markdown
 # 📚 BiblioFem
 
 BiblioFem is a Java console application designed to manage a library catalog. The project follows a layered architecture and applies SOLID principles to provide a clean, maintainable, and scalable codebase.
@@ -122,10 +119,11 @@ Run the `Main` class.
 
 Developed by the **BiblioFem** team.
 
-- Alba
-- Ivanna
-- Natalia
-- Siuzanna
+- [Viviana](https://github.com/alvi103-png)
+- [Ivanna Caraccio](https://github.com/IvannaRCA>)
+- [Chiara](https://github.com/Kressala)
+- [Siuzanna](https://github.com/SiuzannaVach)
+- [Nira](https://github.com/nmantilla12)
 
 ---
 
@@ -140,5 +138,3 @@ This project follows a Git Flow inspired workflow.
 Pull Requests require at least one approval before merging.
 
 ---
-
-````
