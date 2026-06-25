@@ -50,6 +50,7 @@ public class MenuView {
         System.out.println("2. Buscar por título");
         System.out.println("3. Buscar por autora");
         System.out.println("4. Buscar por género");
+        System.out.println("5. Eliminar libro");
 
         System.out.println(ConsoleColors.RED +
                 "0. Salir" +
@@ -77,6 +78,9 @@ public class MenuView {
                         break;
                     case 4:
                         bookView.filterByGenre();
+                        break;
+                    case 5:
+                        bookView.deleteBook();
                         break;
                     case 0:
                         running = false;

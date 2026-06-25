@@ -40,5 +40,9 @@ public class BookService {
                 .toList();
   }
 
+  public void deleteBook(int id){
+      repository.deleteBook(id);
+  }
+
 }
 
