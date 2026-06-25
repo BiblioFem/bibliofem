@@ -54,34 +54,40 @@ public class MenuView {
         System.out.println(ConsoleColors.RED +
                 "0. Salir" +
                 ConsoleColors.RESET);
+        System.out.print("Inserta un número para elegir una opción: ");
     }
 
     public void startMenu() {
         boolean running = true;
+        printWelcome();
         while (running) {
-            printWelcome();
             printMenu();
-            int option = scanner.nextInt();
-            scanner.nextLine();
-            switch (option){
-                case 1:
-                    bookView.getAllBooks();
-                    break;
-                case 2:
-                    bookView.filterByTitle();
-                    break;
-                case 3:
-                    bookView.filterByAuthor();
-                    break;
-                case 4:
-                    bookView.filterByGenre();
-                    break;
-                case 0:
-                    running = false;
-                    System.out.println("¡Hasta pronto!");
-                    break;
-                default:
-                    System.out.println("Opción no válida.");
+            if (scanner.hasNextInt()){
+                int option = scanner.nextInt();
+                scanner.nextLine();
+                switch (option){
+                    case 1:
+                        bookView.getAllBooks();
+                        break;
+                    case 2:
+                        bookView.filterByTitle();
+                        break;
+                    case 3:
+                        bookView.filterByAuthor();
+                        break;
+                    case 4:
+                        bookView.filterByGenre();
+                        break;
+                    case 0:
+                        running = false;
+                        System.out.println("¡Hasta pronto!");
+                        break;
+                    default:
+                        System.out.println("Opción no válida.");
+                }
+            } else {
+                scanner.nextLine();
+                System.out.println("Debes introducir un número.");
             }
         }
     }
