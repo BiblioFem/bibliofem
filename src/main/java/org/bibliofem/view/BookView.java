@@ -11,11 +11,14 @@ public class BookView {
 
     }
 
-    public void printListOfBooks(List<Book> listOfBooks){
+    public void printListOfBooks(List<Book> listOfBooks, boolean showDescription){
         for (Book book : listOfBooks){
             System.out.println("ID: " + book.getIdBook());
             System.out.println("ISBN: " + book.getIsbn());
             System.out.println("TÍTULO: " + book.getTitle());
+            if (showDescription) {
+                System.out.println("DESCRIPCIÓN: " + book.getDescription());
+            }
             System.out.println("AUTOR: " + book.getAuthors());
             System.out.println("GÉNERO: " + book.getGenre());
             System.out.println("--------------------------------");
@@ -24,7 +27,7 @@ public class BookView {
 
     public void getAllBooks(){
         List<Book> books = controller.getAllBooks();
-        printListOfBooks(books);
+        printListOfBooks(books, false);
     }
 
     public void filterByTitle(){
@@ -36,7 +39,7 @@ public class BookView {
             System.out.println("No se encontraron libros con ese título.");
             return;
         }
-        printListOfBooks(books);
+        printListOfBooks(books, true);
 
     }
 
@@ -49,7 +52,7 @@ public class BookView {
             System.out.println("No se encontraron libros de este autor.");
             return;
         }
-        printListOfBooks(books);
+        printListOfBooks(books, true);
 
     }
 
@@ -62,7 +65,7 @@ public class BookView {
             System.out.println("No se encontraron libros de este género.");
             return;
         }
-        printListOfBooks(books);
+        printListOfBooks(books, false);
 
     }
 
