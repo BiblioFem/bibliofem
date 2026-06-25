@@ -2,6 +2,10 @@
 
 BiblioFem is a Java console application designed to manage a library catalog. The project follows a layered architecture and applies SOLID principles to provide a clean, maintainable, and scalable codebase.
 
+##  🔥 DEMO
+
+[demo_bibliofem.mov](../demo_bibliofem.mov)
+
 ## 🚀 Features
 
 - View all books
