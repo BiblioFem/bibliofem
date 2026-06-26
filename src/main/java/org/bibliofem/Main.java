@@ -1,17 +1,28 @@
 package org.bibliofem;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    static void main() {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        IO.println(String.format("Hello and welcome!"));
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            IO.println("i = " + i);
-        }
+import org.bibliofem.controller.BookController;
+import org.bibliofem.database.DatabaseConnection;
+import java.sql.Connection;
+import java.util.List;
+import java.util.Scanner;
+
+import org.bibliofem.model.Book;
+import org.bibliofem.model.Genre;
+import org.bibliofem.model.Author;
+import org.bibliofem.repository.BookRepository;
+import org.bibliofem.repository.impl.BookRepositoryImpl;
+import org.bibliofem.service.BookService;
+import org.bibliofem.utils.ConsoleColors;
+import org.bibliofem.view.BookView;
+import org.bibliofem.view.MenuView;
+
+public class Main {
+    public static void main(String[] args) {
+        MenuView menuView = new MenuView();
+        menuView.startMenu();
+
     }
+
 }
+
